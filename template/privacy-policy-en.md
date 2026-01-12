@@ -72,7 +72,7 @@ Users have the following rights:
 
 ## 8. Children's Personal Information
 
-The App does not intentionally collect personal information from children under [age limit] years old.
+The App does not intentionally collect personal information from children under [age limit (e.g., 13 or 16)] years old.
 
 ---
 
