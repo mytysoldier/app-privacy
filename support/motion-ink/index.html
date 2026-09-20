@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="MOTION INKのサポートとよくある質問 / Support and FAQ for MOTION INK"
+    />
+    <title>サポート / Support | MOTION INK</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #040611;
+        --card: #101420;
+        --text: #f7f8ff;
+        --muted: #a8b0c4;
+        --line: #252b3b;
+        --cyan: #3deeff;
+        --purple: #a878ff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+        background:
+          radial-gradient(circle at 15% 0%, rgba(61, 238, 255, 0.14), transparent 28rem),
+          radial-gradient(circle at 90% 15%, rgba(168, 120, 255, 0.12), transparent 25rem),
+          var(--bg);
+        color: var(--text);
+      }
+      main {
+        width: min(880px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 56px 0 80px;
+      }
+      .brand {
+        color: var(--cyan);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+      h1 {
+        margin: 12px 0 8px;
+        font-size: clamp(30px, 6vw, 46px);
+        line-height: 1.15;
+      }
+      h2 {
+        margin: 32px 0 16px;
+        font-size: 22px;
+      }
+      h3 {
+        margin: 0 0 8px;
+        font-size: 17px;
+      }
+      p,
+      li {
+        line-height: 1.75;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .card {
+        margin-top: 28px;
+        padding: clamp(22px, 5vw, 38px);
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        background: rgba(16, 20, 32, 0.92);
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+      }
+      .button {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 14px 22px;
+        border-radius: 999px;
+        background: linear-gradient(120deg, var(--cyan), var(--purple));
+        color: #050711;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .faq {
+        padding: 20px 0;
+        border-top: 1px solid var(--line);
+      }
+      .faq:first-of-type {
+        border-top: 0;
+      }
+      a:not(.button) {
+        color: var(--cyan);
+      }
+      footer {
+        margin-top: 24px;
+        text-align: center;
+      }
+      @media (max-width: 600px) {
+        main {
+          padding-top: 38px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="brand">MOTION INK</div>
+        <h1>サポート<br />Support</h1>
+        <p class="muted">不具合、ご質問、ご意見をお寄せください。 / Contact us about issues, questions, or feedback.</p>
+      </header>
+
+      <div class="card">
+        <h2>お問い合わせ / Contact</h2>
+        <p>
+          以下のフォームからお問い合わせください。通常、数日以内に返信します。<br />
+          Send your inquiry using the form below. We usually respond within a few days.
+        </p>
+        <a
+          class="button"
+          href="https://forms.gle/YMdfV9GCZ9CfnRqSA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >お問い合わせフォーム / Contact form</a>
+        <p class="muted">
+          Apple Accountのパスワード、カード情報などの機密情報は送信しないでください。<br />
+          Do not submit passwords, payment card details, or other sensitive information.
+        </p>
+
+        <h2>よくある質問 / FAQ</h2>
+
+        <article class="faq">
+          <h3>カメラ映像は保存されますか？ / Does the App save camera footage?</h3>
+          <p>
+            いいえ。カメラ映像は端末上でARの動きを推定するために使用され、作品や書き出した画像・動画には含まれません。<br />
+            No. Camera frames are processed on the device to estimate AR movement and are not included in saved artwork or exports.
+          </p>
+        </article>
+
+        <article class="faq">
+          <h3>Proの購入を復元するには？ / How do I restore Pro?</h3>
+          <p>
+            アプリの「設定」から「購入を復元」を選択してください。購入時と同じApple Accountを使用する必要があります。<br />
+            In the App, open Settings and select Restore Purchases. You need to use the same Apple Account that made the purchase.
+          </p>
+        </article>
+
+        <article class="faq">
+          <h3>サブスクリプションを解約するには？ / How do I cancel a subscription?</h3>
+          <p>
+            iPhoneの「設定」→ Apple Account →「サブスクリプション」からMOTION INKを選択してください。解約後も、現在の請求期間が終了するまではProを利用できます。<br />
+            On your iPhone, open Settings → Apple Account → Subscriptions and select MOTION INK. Pro remains available until the end of the current billing period.
+          </p>
+          <p><a href="https://apps.apple.com/account/subscriptions">Appleのサブスクリプション管理画面 / Manage Apple subscriptions</a></p>
+        </article>
+
+        <article class="faq">
+          <h3>アプリを削除すると作品はどうなりますか？ / What happens if I delete the App?</h3>
+          <p>
+            端末内の作品はアプリとともに削除され、購入の復元では戻りません。端末バックアップからアプリデータを復元した場合を除きます。サブスクリプションはアプリを削除しても自動的には解約されません。<br />
+            Locally stored artwork is deleted with the App and is not recovered by Restore Purchases, unless the App’s data is restored from a device backup. Deleting the App does not automatically cancel a subscription.
+          </p>
+        </article>
+
+        <article class="faq">
+          <h3>書き出しの違いは？ / What export options are available?</h3>
+          <p>
+            無料版では720pの書き出しを利用できます。Proでは1080p、透かしなしの書き出し、EmberとAuroraのブラシを利用できます。<br />
+            Free access includes 720p exports. Pro includes 1080p watermark-free exports and the Ember and Aurora brushes.
+          </p>
+        </article>
+
+        <p><a href="/app-privacy/privacy/motion-ink/">プライバシーポリシー / Privacy Policy</a></p>
+      </div>
+
+      <footer class="muted">© 2026 MOTION INK</footer>
+    </main>
+  </body>
+</html>
