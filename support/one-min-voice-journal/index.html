@@ -56,15 +56,31 @@
   </head>
   <body>
     <main>
-      <h1>サポート</h1>
+      <h1>サポート / Support</h1>
+      <nav aria-label="Language"><a href="#japanese" lang="ja">日本語</a> / <a href="#english" lang="en">English</a></nav>
       <p class="note">1min Voice Journal</p>
-      <div class="card">
+      <div class="card" id="japanese" lang="ja">
         <p>いつもご利用ありがとうございます。以下よりお問い合わせください。</p>
         <p>
           <a href="https://forms.gle/C8tQpagQvUb8Fcho6">Googleフォームはこちら</a>
         </p>
         <p class="note">不具合報告の際は、再現手順・端末情報・OSバージョンを記載いただけると助かります。</p>
       </div>
+
+      <section class="card" id="english" lang="en" style="margin-top: 24px">
+        <h2>Support</h2>
+        <p>For bug reports, questions, or feedback, please use the <a href="https://forms.gle/C8tQpagQvUb8Fcho6">contact form</a>. You may write your message in English.</p>
+        <p>The form labels are in Japanese. Use this guide to complete it:</p>
+        <ul>
+          <li><strong>お問い合わせ種別</strong> (required): inquiry type. Choose 不具合報告 (bug report), 使い方の質問 (how-to question), 改善要望 (suggestion), or その他 (other).</li>
+          <li><strong>お問い合わせ内容</strong> (required): your message.</li>
+          <li><strong>連絡先メールアドレス</strong> (optional): contact email if you would like a reply.</li>
+          <li><strong>端末情報</strong> (optional): device and iOS version.</li>
+          <li><strong>再現手順</strong> (optional): steps to reproduce a problem.</li>
+          <li><strong>添付ファイル</strong> (optional): attachment, up to one file and 10 MB. Google may require sign-in for file uploads.</li>
+        </ul>
+        <p>Select <strong>送信</strong> to submit. Please do not include journal text, recordings, authentication tokens, or API keys.</p>
+      </section>
     </main>
   </body>
 </html>

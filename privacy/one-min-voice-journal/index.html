@@ -60,9 +60,10 @@
   </head>
   <body>
     <main>
-      <h1>プライバシーポリシー</h1>
+      <h1>プライバシーポリシー / Privacy Policy</h1>
+      <nav aria-label="Language"><a href="#japanese" lang="ja">日本語</a> / <a href="#english" lang="en">English</a></nav>
       <p class="note">最終更新日: 2026-10-24</p>
-      <div class="card">
+      <div class="card" id="japanese" lang="ja">
         <p>本アプリ「1min Voice Journal」は、1分以内の音声で日々の出来事や気持ちを記録するアプリです。</p>
         <p class="note">以下の同意設定・匿名利用者ID・利用回数の管理・サーバー一時保存・アプリ内アカウント削除の説明は、これらを備えた更新版に適用します。更新前のバージョンでは、AI送信同意の設定やサーバーの利用台帳を備えていない場合があります。</p>
 
@@ -103,6 +104,39 @@
         <h2>6. 本ポリシーの改定</h2>
         <p>機能や情報の取り扱いの変更に応じて、本ポリシーを更新します。AIへの送信内容など同意の前提を変更する場合は、アプリで改めて確認することがあります。</p>
       </div>
+
+      <section class="card" id="english" lang="en" style="margin-top: 24px">
+        <h2>Privacy Policy</h2>
+        <p class="note">Last updated: 2026-10-24</p>
+        <p>1min Voice Journal lets you record daily events and feelings in audio clips of up to one minute.</p>
+        <p class="note">The descriptions below of AI consent, anonymous user IDs, usage limits, temporary server storage, and in-app account deletion apply to versions that include those features. Earlier versions may not include AI consent settings or a server-side usage ledger.</p>
+        <h2>1. Information we handle and why</h2>
+        <ul>
+          <li><strong>Recordings and transcripts:</strong> to record journal entries, transcribe speech, and generate an emotion label, title, and short summary.</li>
+          <li><strong>Emotion labels, titles, and summaries:</strong> to display and store entries on your device and let you revisit them.</li>
+          <li><strong>Anonymous user ID, time zone, usage count, processing ID, status and timestamps, and an audio hash:</strong> to manage the daily free allowance, prevent duplicate processing, support retries, and control abuse and costs. We do not ask you to enter a name or email address.</li>
+          <li><strong>AI consent choice and notification settings:</strong> stored on your device as app settings.</li>
+        </ul>
+        <h2>2. AI submission and consent</h2>
+        <p>For AI analysis, recordings and transcripts are sent to OpenAI through Supabase's servers. In versions that support consent, we explain the data and purpose before the first submission and request consent separately from microphone permission.</p>
+        <p>You can record, save on your device, play, and delete audio without consenting. In that case the app does not perform AI analysis or send audio or text for analysis. In versions with these controls, you can review the explanation and change your choice under <strong>AI &amp; Privacy</strong> on the home screen.</p>
+        <p>Withdrawing consent stops future submissions. It does not itself delete information already sent.</p>
+        <h2>3. Storage on your device and on the server</h2>
+        <p>Saved entries and audio files are managed on your device. Audio files are not permanently stored on the app's server. Depending on your device and OS settings, they may be included in backups.</p>
+        <p>In versions with server-side retries, transcripts and analysis results are temporarily stored in Supabase. Incomplete processing can be retrieved for three minutes and completed results for 24 hours. Expired data is deleted periodically, so deletion can occur after the retrieval deadline.</p>
+        <p>Processing metadata, such as processing IDs, is deleted once it is at least three days old and its retrieval period has expired. Anonymous user IDs, fixed time zones, and usage counts are retained to manage usage limits until the anonymous user is deleted.</p>
+        <p>Logs and backups held by Supabase or OpenAI may be subject to those services' contracts, settings, and retention terms. The app's retrieval deadlines do not mean immediate deletion from all external services or backups.</p>
+        <h2>4. External services</h2>
+        <p>Supabase provides server processing, anonymous authentication, and the usage ledger. OpenAI provides transcription and generation of emotion labels and summaries. For details of external processing and retention, see the <a href="https://supabase.com/privacy">Supabase Privacy Policy</a> and <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI API data practices</a>.</p>
+        <p>Except for submissions needed to provide these features through external services or as required by law, the app is not intended to provide journal content to third parties. It does not include advertising or behavioral analytics SDKs.</p>
+        <h2>5. Deletion and contact</h2>
+        <p>You can delete saved entries from their detail screens. Deletion on your device does not simultaneously delete information already sent to the server or existing backups.</p>
+        <p>In versions with account deletion, choose <strong>AI &amp; Privacy → Delete AI account and server data</strong> on the home screen to delete the anonymous account, usage ledger, and temporarily stored transcripts and analysis results. AI submissions also stop. Entries and recordings on your device remain. You must consent again to use AI.</p>
+        <p>To let you confirm completion after a lost connection or similar interruption, only a verification hash derived one-way from the credential is retained for seven days and then deleted periodically. This receipt does not store your user ID, journal content, audio, or original authentication token. Deletion does not mean immediate removal from external services such as OpenAI or existing backups.</p>
+        <p>If deletion cannot be confirmed, retry in the app. For questions about data handling or unresolved problems, contact us using the <a href="../../support/one-min-voice-journal/#english">support page</a>. You do not need to include journal text, audio, authentication tokens, or API keys in the form.</p>
+        <h2>6. Changes to this policy</h2>
+        <p>We may update this policy when features or data practices change. If the basis for consent changes, such as the information sent for AI processing, the app may ask you to review it again.</p>
+      </section>
     </main>
   </body>
 </html>
